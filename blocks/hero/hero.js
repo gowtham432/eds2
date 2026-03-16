@@ -33,10 +33,10 @@ export default function decorate(block) {
   // Parse key-value rows into a map
   const fields = {};
   [...block.children].forEach((row) => {
-    const cells = [...row.children];
-    if (cells.length >= 2) {
-      const key = cells[0].textContent.trim().toLowerCase();
-      fields[key] = cells[1];
+    const [keyCell, valueCell] = [...row.children];
+    if (keyCell && valueCell) {
+      const key = keyCell.textContent.trim().toLowerCase();
+      fields[key] = valueCell;
     }
   });
 
