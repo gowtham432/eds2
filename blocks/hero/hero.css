@@ -8,7 +8,7 @@
   min-height: 480px;
   padding: 60px 24px;
   background-color: #0a0a0a;
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero-content {
@@ -36,14 +36,14 @@
   font-weight: 800;
   line-height: 1.15;
   margin: 0 0 16px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Subheading */
 .hero-subheading {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 500;
-  color: #cccccc;
+  color: #ccc;
   margin: 0 0 16px;
 }
 
@@ -51,7 +51,7 @@
 .hero-description {
   font-size: 1rem;
   line-height: 1.7;
-  color: #aaaaaa;
+  color: #aaa;
   margin: 0 0 32px;
 }
 
@@ -59,7 +59,7 @@
 .hero-btn {
   display: inline-block;
   background-color: #e86c00;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -112,7 +112,7 @@
 /* ─────────────────────────────────────────
    Responsive
 ───────────────────────────────────────── */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .hero.split .hero-wrapper {
     flex-direction: column;
     padding: 40px 24px;
