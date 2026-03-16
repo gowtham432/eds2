@@ -36,8 +36,7 @@ export default function decorate(block) {
     const cells = [...row.children];
     if (cells.length >= 2) {
       const key = cells[0].textContent.trim().toLowerCase();
-      const value = cells[1];
-      fields[key] = value;
+      fields[key] = cells[1];
     }
   });
 
@@ -52,52 +51,46 @@ export default function decorate(block) {
   wrapper.classList.add('hero-wrapper');
 
   if (isSplit) {
-    // ── Split layout ──────────────────────────────────────────
+    // Split layout
     const imageCol = document.createElement('div');
     imageCol.classList.add('hero-image-col');
 
     const textCol = document.createElement('div');
     textCol.classList.add('hero-text-col');
 
-    // Image
-    if (fields['image']) {
-      const img = fields['image'].querySelector('img') || fields['image'];
+    if (fields.image) {
+      const img = fields.image.querySelector('img') || fields.image;
       imageCol.appendChild(img);
     }
 
-    // Badge
-    if (fields['badge']) {
+    if (fields.badge) {
       const badge = document.createElement('span');
       badge.classList.add('hero-badge');
-      badge.textContent = fields['badge'].textContent.trim();
+      badge.textContent = fields.badge.textContent.trim();
       textCol.appendChild(badge);
     }
 
-    // Heading
-    if (fields['heading']) {
+    if (fields.heading) {
       const h1 = document.createElement('h1');
       h1.classList.add('hero-heading');
-      h1.textContent = fields['heading'].textContent.trim();
+      h1.textContent = fields.heading.textContent.trim();
       textCol.appendChild(h1);
     }
 
-    // Subheading
-    if (fields['subheading']) {
+    if (fields.subheading) {
       const h2 = document.createElement('h2');
       h2.classList.add('hero-subheading');
-      h2.textContent = fields['subheading'].textContent.trim();
+      h2.textContent = fields.subheading.textContent.trim();
       textCol.appendChild(h2);
     }
 
-    // Description
-    if (fields['description']) {
+    if (fields.description) {
       const p = document.createElement('p');
       p.classList.add('hero-description');
-      p.textContent = fields['description'].textContent.trim();
+      p.textContent = fields.description.textContent.trim();
       textCol.appendChild(p);
     }
 
-    // Button
     if (fields['button-text'] && fields['button-link']) {
       const a = document.createElement('a');
       a.classList.add('hero-btn');
@@ -108,45 +101,39 @@ export default function decorate(block) {
 
     wrapper.appendChild(imageCol);
     wrapper.appendChild(textCol);
-
   } else {
-    // ── Default centered layout ───────────────────────────────
+    // Default centered layout
     const content = document.createElement('div');
     content.classList.add('hero-content');
 
-    // Badge
-    if (fields['badge']) {
+    if (fields.badge) {
       const badge = document.createElement('span');
       badge.classList.add('hero-badge');
-      badge.textContent = fields['badge'].textContent.trim();
+      badge.textContent = fields.badge.textContent.trim();
       content.appendChild(badge);
     }
 
-    // Heading
-    if (fields['heading']) {
+    if (fields.heading) {
       const h1 = document.createElement('h1');
       h1.classList.add('hero-heading');
-      h1.textContent = fields['heading'].textContent.trim();
+      h1.textContent = fields.heading.textContent.trim();
       content.appendChild(h1);
     }
 
-    // Subheading
-    if (fields['subheading']) {
+    if (fields.subheading) {
       const h2 = document.createElement('h2');
       h2.classList.add('hero-subheading');
-      h2.textContent = fields['subheading'].textContent.trim();
+      h2.textContent = fields.subheading.textContent.trim();
       content.appendChild(h2);
     }
 
-    // Description
-    if (fields['description']) {
+    if (fields.description) {
       const p = document.createElement('p');
       p.classList.add('hero-description');
-      p.textContent = fields['description'].textContent.trim();
+      p.textContent = fields.description.textContent.trim();
       content.appendChild(p);
     }
 
-    // Button
     if (fields['button-text'] && fields['button-link']) {
       const a = document.createElement('a');
       a.classList.add('hero-btn');
