@@ -1,0 +1,10 @@
+{
+  "reviewed": true,
+  "sample": "authoring/campaign-samples.html",
+  "semanticRoles": ["cards"],
+  "fields": ["heading", "items"],
+  "layoutVariants": ["flow"],
+  "responsiveBehaviors": ["stack-on-mobile"],
+  "interactions": [],
+  "tableContract": "Campaign Cards: optional title row with H2 in first cell and empty second cell. Each card row contains image in first cell and H3/body/links in second cell."
+}

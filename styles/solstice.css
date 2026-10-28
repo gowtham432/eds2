@@ -1,0 +1,20 @@
+/* Opt-in campaign theme. Existing pages keep their current project styles. */
+body.solstice {
+  background: #fcfbf6;
+  color: #26372f;
+  font: 16px/1.65 Georgia, serif;
+}
+
+body.solstice main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body.solstice main > .section {
+  margin: 0;
+}
+
+body.solstice main > .section > div {
+  max-width: none;
+  padding: 0;
+}
