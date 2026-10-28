@@ -1,0 +1,10 @@
+{
+  "reviewed": true,
+  "sample": "authoring/campaign-samples.html",
+  "semanticRoles": ["hero"],
+  "fields": ["heading", "body", "image", "ctaLabel", "ctaUrl"],
+  "layoutVariants": ["split"],
+  "responsiveBehaviors": ["stack-on-mobile"],
+  "interactions": [],
+  "tableContract": "Campaign Hero: two columns. Text cell contains eyebrow paragraph, H1, body paragraphs and CTA link. Second cell contains an authored image with alternative text. Source is the Solstice sample."
+}

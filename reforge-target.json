@@ -1,0 +1,11 @@
+{
+  "project": "gowtham432/eds2",
+  "repository": "https://github.com/gowtham432/eds2.git",
+  "authoringMode": "da-live",
+  "runtime": "aem-boilerplate",
+  "contentPrefix": "/solstice",
+  "previewUrl": "https://main--eds2--gowtham432.aem.page/",
+  "localUrl": "http://localhost:3000/",
+  "authoringUrl": "https://da.live/edit#/gowtham432/eds2/solstice/index",
+  "notes": "Published home content identifies Document Authoring. Direct DA source access requires the operator's authenticated session. New content remains local until reviewed and uploaded."
+}
